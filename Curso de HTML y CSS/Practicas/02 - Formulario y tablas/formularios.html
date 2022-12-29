@@ -13,21 +13,45 @@
 
         <div>
             <label for="nombreusuario">Nombre de usuario</label>
-            <input name="nombreusuario" id="nombreusuario">
+            <input name="nombreusuario" id="nombreusuario" required>
         </div>
-
-        <!-- Textarea o campos de texto -->
-        <did>
-            <label for="comentarios">Comentarios</label>
-            <textarea name="comentarios" id="comentarios"></textarea>
-        </did>
+        <br>
 
         <div>
             <label for="password">Contraseña</label>
-            <input name="password" id="password">
+            <input type="password" name="password" id="password" required>
         </div>
+        <br>
 
-        <button>Enviar</button>
+        <div>
+            <label for="email">Cuál es tu email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" required min="0" max="200" step="5">
+        </div>
+        <br>
+
+        <div>
+            <label for="nacimiento">Cual es tu fecha de nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento">
+        </div>
+        <br>
+
+          <!-- Textarea o campos de texto -->
+          <did>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </did>
+        <br>
+
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+
 
     </form>
     
